@@ -5,12 +5,13 @@
   "repository": "https://github.com/Workshop64/buildpulse-example-testcafe",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome:headless test/*"
+    "test": "testcafe chrome:headless test/* -r spec,xunit:/tmp/test-results/res.xml"
   },
   "author": "Jason Rudolph",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "testcafe": "^1.8.0"
+    "testcafe": "^1.8.0",
+    "testcafe-reporter-xunit": "^2.1.0"
   }
 }
