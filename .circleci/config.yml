@@ -1,10 +1,13 @@
 version: 2.1
+orbs:
+  buildpulse: workshop64/buildpulse@0.3
 jobs:
   build:
     docker:
       - image: circleci/node:12.13-browsers
     steps:
       - checkout
+      - buildpulse/setup # Set up BuildPulse connection *before* running the test suite
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
@@ -20,3 +23,7 @@ jobs:
       - run:
           name: test
           command: npm test
+      - buildpulse/upload:
+          path: /tmp/test-results
+          account-id: 68192324 # Replace this value with your BuildPulse account ID
+          repository-id: 239299701 # Replace this value with your BuildPulse repository ID
