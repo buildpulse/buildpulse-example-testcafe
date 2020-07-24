@@ -1,13 +1,12 @@
 version: 2.1
 orbs:
-  buildpulse: workshop64/buildpulse@0.3
+  buildpulse: workshop64/buildpulse@0.4
 jobs:
   build:
     docker:
       - image: circleci/node:12.13-browsers
     steps:
       - checkout
-      - buildpulse/setup # Set up BuildPulse connection *before* running the test suite
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
