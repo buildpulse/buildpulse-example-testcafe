@@ -2,7 +2,7 @@
   "name": "buildpulse-example-testcafe",
   "version": "1.0.0",
   "description": "An example TestCafe project to demonstrate connecting to BuildPulse for flaky test detection",
-  "repository": "https://github.com/Workshop64/buildpulse-example-testcafe",
+  "repository": "https://github.com/buildpulse/buildpulse-example-testcafe",
   "main": "index.js",
   "scripts": {
     "test": "testcafe chrome:headless test/* -r spec,xunit:/tmp/test-results/res.xml"
