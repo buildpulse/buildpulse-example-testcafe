@@ -9,7 +9,6 @@
   },
   "author": "Jason Rudolph",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "testcafe": "^1.8.0",
     "testcafe-reporter-xunit": "^2.1.0"
