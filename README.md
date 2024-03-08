@@ -1,6 +1,6 @@
 # BuildPulse Example Project: TestCafe
 
-This is an example [TestCafe](https://devexpress.github.io/testcafe/) project demonstrating how to send test results to [BuildPulse](https://buildpulse.io) to help you detect, track, and eliminate flaky tests.
+This is an example [TestCafe](https://devexpress.github.io/testcafe/) project demonstrating how to send test results to [BuildPulse](https://buildpulse.io) to help you find and [fix flaky tests](https://buildpulse.io/products/flaky-tests).
 
 If you have an existing TestCafe project building on CircleCI, this [diff](https://github.com/buildpulse/buildpulse-example-testcafe/compare/d02eb13...circle-ci) shows how to set up your `.circleci/config.yml` to send test results to BuildPulse.
 
